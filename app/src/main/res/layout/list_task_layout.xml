@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_item_container"
+    android:background="@drawable/rounded_edit_text"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+    <!--
+       background can be written as style
+       -->
+    <CheckBox
+        android:id="@+id/cb_completed"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="0dp"
+        android:padding="8dp"
+        android:layout_toRightOf="@+id/cb_completed"
+        android:ellipsize="marquee"
+        android:maxLines="1"
+        android:text="default"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
